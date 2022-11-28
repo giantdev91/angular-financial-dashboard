@@ -1,5 +1,5 @@
-import { trigger, transition, style, animate, group, state, keyframes } from '@angular/animations';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { trigger, transition, style, animate, group, state } from '@angular/animations';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-back-left-side-bar',

@@ -1,5 +1,4 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { Component, Inject } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'insurance-power-house'
+  title = 'Insurance Power House';
 }

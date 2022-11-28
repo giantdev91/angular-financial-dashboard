@@ -1,7 +1,4 @@
-import { Direction } from '@angular/cdk/bidi';
-import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
 import { LayoutService } from 'src/app/shared/services/layout.service';
 
 @Component({

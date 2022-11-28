@@ -1,4 +1,3 @@
-import { trigger, transition, style, animate } from '@angular/animations';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({

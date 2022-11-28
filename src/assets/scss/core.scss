@@ -1,36 +1,29 @@
-@use '@angular/material' as mat;
+@use '@angular/material'as mat;
 
 @include mat.core();
 
-$primary-color: #005F83;
-$accent-color: #FFFFFF;
-$warn-color: #FD3B31;
+$primary-color: var(--primary-color);
+$accent-color: var(--accent-color);
+$warn-color: var(--warn-color);
+$custom-primary-color: (50: $primary-color,
+    contrast: ());
 
-$custom-primary-color: (
-    50: $primary-color,
-    contrast: ()
-);
+$custom-accent-color: (50: $accent-color,
+    contrast: ());
 
-$custom-accent-color: (
-    50: $accent-color,
-    contrast: ()
-);
-
-$custom-warn-color: (
-    50: $warn-color,
-    contrast: ()
-);
+$custom-warn-color: (50: $warn-color,
+    contrast: ());
 
 $my-custom-level: mat.define-typography-level($font-family: url('./assets/fonts/Poppins-Regular.ttf'),
-        $font-weight: 400,
-        $font-size: 1rem,
-        $line-height: 1,
-        $letter-spacing: normal,
-    );
+    $font-weight: 400,
+    $font-size: 1rem,
+    $line-height: 1,
+    $letter-spacing: normal,
+);
 
 
 $my-custom-typography: mat.define-typography-config($headline: mat.define-typography-level(3rem, 1, 700),
-    );
+);
 
 $primary: mat.define-palette($custom-primary-color, 50, 50, 50);
 $accent: mat.define-palette($custom-accent-color, 50, 50, 50);
@@ -38,9 +31,9 @@ $accent: mat.define-palette($custom-accent-color, 50, 50, 50);
 $warn: mat.define-palette($custom-warn-color, 50, 50, 50);
 
 $theme: mat.define-light-theme((color: (primary: $primary,
-                accent: $accent,
-                warn: $warn,
-            )));
+            accent: $accent,
+            warn: $warn,
+        )));
 
 @include mat.core-theme($theme);
 @include mat.all-component-themes($theme);
@@ -72,5 +65,7 @@ body {
 
 :root {
     --primary-color: #005F83;
-    --accent-color: #FFFFFF;
+    --accent-color: #186AA5;
+    --success-color: #199E52;
+    --warn-color: #E94218;
 }
