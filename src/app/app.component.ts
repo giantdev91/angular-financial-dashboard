@@ -7,5 +7,5 @@ import { Component, Inject } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'insurance-power-house';
+  title = 'insurance-power-house'
 }
