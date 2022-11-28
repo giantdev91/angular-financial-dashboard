@@ -1,0 +1,10 @@
+<div class="h-full w-full">
+    <div class="h-[90%]">
+        <app-calendar *ngIf="showCalender"></app-calendar>
+        <app-emails *ngIf="!showCalender"></app-emails>
+    </div>
+    <div class="h-[10%] flex justify-center items-center">
+        <button mat-raised-button color="primary" class="w-[80%] h-[50%] text-[#ffffff] rounded-2xl"
+            (click)="ChangeView()">{{ButtonText}}</button>
+    </div>
+</div>

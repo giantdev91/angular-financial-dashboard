@@ -1,0 +1,15 @@
+<app-header (ToggleSideBarForLeftMenu)="LSideBarToggle()" class="shadow-2xl "></app-header>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" position="start" opened="true" class="accent-background-color">
+        <app-left-side-bar></app-left-side-bar>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+    <mat-sidenav #sidenav mode="side" position="end" opened="true" class="accent-background-color">
+        <app-right-side-bar></app-right-side-bar>
+    </mat-sidenav>
+</mat-sidenav-container>

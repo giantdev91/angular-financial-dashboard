@@ -1,0 +1,10 @@
+<div class="flex w-full p-2" [ngStyle]="{'justify-content': message.received ? 'flex-start' :'flex-end' }">
+    <div class="flex flex-col w-[75%] shadow-xl rounded-lg p-2 ">
+        <div class="text-right text-xs">
+            {{message.time}}
+        </div>
+        <div class="text-left text-sm">
+            {{message.message}}
+        </div>
+    </div>
+</div>

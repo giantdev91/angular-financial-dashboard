@@ -1,0 +1,19 @@
+<div class="h-full p-4 pb-0">
+    <div class="h-[10%]">
+        <span class="font-bold text-2xl">Hello Ali Atwi,</span><br>
+        <span class="font-light">Today is 25.11.2022</span>
+    </div>
+    <div class="flex flex-row h-[30%] gap-4">
+        <div *ngFor="let item of cards">
+            <app-card [card]="item"></app-card>
+        </div>
+    </div>
+    <div class="flex flex-row w-[100%] h-[60%]">
+        <div class="w-[40%]">
+            <app-assigned-tasks></app-assigned-tasks>
+        </div>
+        <div class="w-[60%]">
+            <app-sticky-notes></app-sticky-notes>
+        </div>
+    </div>
+</div>

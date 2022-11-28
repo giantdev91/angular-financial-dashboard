@@ -1,0 +1,17 @@
+<mat-form-field floatLabel="never">
+    <mat-label class="flex justify-center items-center">
+        <span class="font-light text-sm text-blue pr-2">Johnathan Cooperman</span>
+        <mat-icon svgIcon="small-down"></mat-icon>
+    </mat-label>
+    <mat-select [disableOptionCentering]="true" panelClass="selectCustomClass" (selectionChange)="onChange($event)">
+        <mat-option *ngFor="let option of list; let i = index" class="matOption" (click)="onChange(option.value)">
+            <div class="flex justify-start items-center text-sm pb-2">
+                <mat-icon svgIcon="{{option.icon}}" class="dropDownIcon"></mat-icon>
+                <span> {{option.label}}</span>
+            </div>
+            <div class="absolute inset-x-0 bottom-0 pl-4 pr-4 opacity-20">
+                <hr *ngIf="i+1 !== list.length">
+            </div>
+        </mat-option>
+    </mat-select>
+</mat-form-field>

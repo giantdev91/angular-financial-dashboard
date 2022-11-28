@@ -1,0 +1,7 @@
+<div class="relative h-full w-full menu-parent" [@flipState]="flip">
+    <app-front-left-side-bar (flip)="toggleFlip()"
+        class="absolute h-full w-full text-white text-center side menu-front">
+    </app-front-left-side-bar>
+    <app-back-left-side-bar (flip)="toggleFlip()" class="absolute h-full w-full text-white text-center side menu-back">
+    </app-back-left-side-bar>
+</div>

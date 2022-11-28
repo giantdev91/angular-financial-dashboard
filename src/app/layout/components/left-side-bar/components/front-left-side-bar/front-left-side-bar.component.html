@@ -1,0 +1,28 @@
+<div class="h-full pl-4 pr-4 overflow-hidden">
+    <div class="h-[5%] flex items-center gap-2 text-lg text-blue">
+        <mat-icon svgIcon="menu" class="cursor-pointer" (click)="flipCard()">
+        </mat-icon>
+        Switch to Menu
+    </div>
+    <div class="h-[95%]">
+        <div class="bg-[#F4F4F4] text-blue pt-2 pb-2 rounded-lg h-[5%]">
+            Communication Inbox
+        </div>
+        <div class="h-[95%]">
+            <mat-tab-group class="h-[100%]">
+                <mat-tab label="DIRECT" class="h-[100%]">
+                    <!-- <div class="bg-blue h-[100%]">
+                        BATATA
+                    </div> -->
+                    <app-direct></app-direct>
+                </mat-tab>
+                <mat-tab label="GROUPS" class="h-[100%]">
+                    <!-- <div c>
+
+                    </div> -->
+                    <app-group></app-group>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+</div>

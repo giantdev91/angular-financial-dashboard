@@ -1,0 +1,22 @@
+<mat-toolbar class="border-[1px] border-[#00000029] border-solid shadow-2xl">
+    <mat-toolbar-row>
+        <div class="flex justify-center items-center">
+            <mat-icon svgIcon="logo" class="customIconSize">
+            </mat-icon>
+        </div>
+        <span class="spacer"></span>
+
+        <div class="flex justify-center items-center pr-8 gap-4 text-blue">
+
+            <div class="search flex items-center bloc bg-[#F7F7F7] rounded-xl gap-4 text-sm pr-4 pl-4 text-blue">
+                <mat-icon svgIcon="search"></mat-icon>
+                <input class="text-blue h-full" matInput placeholder="Search or type a command (Ctrl + G)">
+            </div>
+
+            <mat-icon svgIcon="notification"></mat-icon>
+            <app-dropdown></app-dropdown>
+            <img src="../../../../assets/images/profile.jpg" style="border-radius: 50%;" alt="Avatar"
+                class="avatar object-cover w-10 h-10">
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

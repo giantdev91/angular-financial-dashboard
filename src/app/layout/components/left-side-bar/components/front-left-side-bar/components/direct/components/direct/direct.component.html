@@ -1,0 +1,15 @@
+<div class="flex flex-col pt-4 h-full">
+    <div *ngIf="!showChat"
+        class="search flex items-center bg-[#FFFFFF] rounded-xl gap-4 text-sm pr-4 pl-4 pd-4 shadow-lg">
+        <mat-icon svgIcon="search-gray"></mat-icon>
+        <input class="h-full" style="text-align: left;" matInput placeholder="Search…">
+    </div>
+    <div *ngIf="showChat" class="h-full">
+        <app-chat-card [message]="message" [photoURL]="photoURL" (backEvent)="back()"></app-chat-card>
+    </div>
+    <div *ngIf="!showChat" class="h-[90%] overflow-auto">
+        <div class="pt-4 overflow-hidden" *ngFor="let contact of contacts">
+            <app-contact-card [contact]="contact" (click)="ShowChat(contact)"></app-contact-card>
+        </div>
+    </div>
+</div>

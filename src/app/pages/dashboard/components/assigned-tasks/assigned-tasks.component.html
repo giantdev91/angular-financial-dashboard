@@ -1,0 +1,10 @@
+<div class="h-[100%] p-4 pb-0 flex flex-col justify-start">
+    <div class="h-[5%]">
+        <span class="font-bold text-lg">Assigned Tasks</span>
+    </div>
+    <div class="h-[95%] overflow-auto pt-4">
+        <div *ngFor="let item of items" class="p-2">
+            <app-assigned-tasks-item></app-assigned-tasks-item>
+        </div>
+    </div>
+</div>
