@@ -1,0 +1,14 @@
+:host ::ng-deep .mat-tab-label {
+    min-width: 100px !important;
+    opacity: 1 !important;
+    color: #000000;
+    font-weight: 700 !important;
+    padding: 6px 0px !important;
+}
+
+:host ::ng-deep .mat-tab-label-active {
+    background-color: var(--primary-color);
+    color: #ffffff !important;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
