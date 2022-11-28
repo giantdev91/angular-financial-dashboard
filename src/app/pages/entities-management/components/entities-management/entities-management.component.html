@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="flex items-center px-10 mt-6">
+    <button class="flex mr-4" mat-button>
+        <span class="material-icons">
+            keyboard_return
+        </span>
+    </button>
+    <p class="font-semibold text-xl">Back</p>
+</div>
+<div class="grid grid-cols-4 mx-10 mt-6">
+    <div>
+        <app-entity-information></app-entity-information>
+    </div>
+    <div class="col-span-2"></div>
+    <div class="flex flex-col shadow border-2 border-gray-light2 rounded-xl">
+        <mat-tab-group>
+            <mat-tab>
+                <ng-template class="font-bold text-center text-base" mat-tab-label>Profile <br />Overview</ng-template>
+                <app-profile-overview></app-profile-overview>
+            </mat-tab>
+            <mat-tab>
+                <ng-template class="font-bold text-center text-base" mat-tab-label>Policies</ng-template>
+            </mat-tab>
+            <mat-tab>
+                <ng-template class="font-bold text-center text-base" mat-tab-label>Claims</ng-template>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

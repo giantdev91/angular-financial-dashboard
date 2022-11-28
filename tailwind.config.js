@@ -19,7 +19,6 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       slate: colors.slate,
-      gray: colors.gray,
       zinc: colors.zinc,
       neutral: colors.neutral,
       stone: colors.stone,
@@ -56,6 +55,10 @@ module.exports = {
       'success': {
         DEFAULT: 'var(--success-color)',
       },
+      'gray': {
+        light1: '#E8EFF7',
+        light2: '#E2E2E2'
+      }
     }),
     columns: {
       auto: 'auto',
@@ -143,7 +146,9 @@ module.exports = {
     backdropOpacity: ({ theme }) => theme('opacity'),
     backdropSaturate: ({ theme }) => theme('saturate'),
     backdropSepia: ({ theme }) => theme('sepia'),
-    backgroundColor: ({ theme }) => theme('colors'),
+    backgroundColor: (theme) => ({
+      ...theme("colors"),
+    }),
     backgroundImage: {
       none: 'none',
       'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
