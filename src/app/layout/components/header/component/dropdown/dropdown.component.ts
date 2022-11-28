@@ -25,6 +25,6 @@ export class DropdownComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onChange(event: any): void {
+  onChange(_event: any): void {
   }
 }
