@@ -1,0 +1,10 @@
+<div
+    class="flex justify-between items-center bg-[#FFFFFF] rounded-full w-full h-8 text-black pl-4 pr-1 cursor-pointer hover:shadow-2xl hover:w-[100%]">
+    <div class="flex items-center">
+        <span class="text-xxs font-light"> {{item.title}} </span>
+    </div>
+    <div class="flex items-center">
+        <span class="text-[10px]"> +{{item.number}} </span>
+        <mat-icon [ngStyle]="colorStyle">keyboard_arrow_right</mat-icon>
+    </div>
+</div>
