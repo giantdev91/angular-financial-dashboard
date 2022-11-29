@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { card } from '../../models/card.model';
+import { card } from '../../../../shared/models/card/card.model';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +10,7 @@ export class DashboardComponent implements OnInit {
 
   cards: card[] = [
     {
-      employee: [
+      employees: [
         {
           photoURL: '../../../../../assets//images/profile.jpg',
         },
@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
         },
       ],
       title: 'Customer Service',
-      pages: [
+      items: [
         {
           title: 'Insurance Renewals',
           number: 4
@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
       backgroundColor: '#186AA5'
     },
     {
-      employee: [
+      employees: [
         {
           photoURL: '../../../../../assets//images/profile.jpg',
         },
@@ -53,7 +53,7 @@ export class DashboardComponent implements OnInit {
         },
       ],
       title: 'Insurance Underwriting',
-      pages: [
+      items: [
         {
           title: 'Insurance Renewals',
           number: 4
@@ -66,7 +66,7 @@ export class DashboardComponent implements OnInit {
       backgroundColor: '#469CD9'
     },
     {
-      employee: [
+      employees: [
         {
           photoURL: '../../../../../assets//images/profile.jpg',
         },
@@ -81,7 +81,7 @@ export class DashboardComponent implements OnInit {
         },
       ],
       title: 'Accounting & Finance',
-      pages: [
+      items: [
         {
           title: 'Insurance Renewals',
           number: 4

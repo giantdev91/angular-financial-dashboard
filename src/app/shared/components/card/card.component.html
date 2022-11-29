@@ -1,0 +1,18 @@
+<div class="flex flex-col rounded-3xl w-[270px] h-full p-4 text-[#ffffff]" [ngStyle]="backgroundStyle">
+    <div *ngIf="card.employees?.length > 0" class="h-[20%] flex -space-x-4">
+        <div *ngFor="let employee of card.employees; let i = index">
+            <img *ngIf="i < 3" class="w-[30px] h-[30px]  rounded-full" [src]="employee.photoURL">
+            <a *ngIf="i === card.employees.length -1 "
+                class="cursor-default flex justify-center text-[#000] z-50 items-center w-[30px] h-[30px] text-xs font-medium bg-[#FFFFFF] rounded-full"
+                href="#">+{{card.employees.length - 3}}</a>
+        </div>
+    </div>
+    <div class="h-[10%]">
+        <span class="font-bold text-sm">{{card.title}}</span>
+    </div>
+    <div class="h-[70%] pt-4">
+        <div class="justify-center pt-1 pb-1" *ngFor="let item of card.items">
+            <app-card-item [item]="item" [color]="card.backgroundColor"></app-card-item>
+        </div>
+    </div>
+</div>
