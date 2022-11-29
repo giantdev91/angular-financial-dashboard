@@ -15,11 +15,13 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { CardComponent } from './components/card/card.component';
 import { CardItemComponent } from './components/card-item/card-item.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
     declarations: [
         CardItemComponent,
-        CardComponent
+        CardComponent,
+        ButtonComponent
     ],
     imports: [
         MatSelectModule,
@@ -38,7 +40,8 @@ import { CardItemComponent } from './components/card-item/card-item.component';
         ButtonModule
     ],
     exports: [
-        CardComponent
+        CardComponent,
+        ButtonComponent
     ],
     providers: [],
 })
