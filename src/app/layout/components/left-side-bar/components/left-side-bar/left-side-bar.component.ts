@@ -1,6 +1,6 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { BackLeftSideBarComponent } from './components/back-left-side-bar/back-left-side-bar.component';
+import { BackLeftSideBarComponent } from '../back-left-side-bar/back-left-side-bar.component';
 
 @Component({
   selector: 'app-left-side-bar',

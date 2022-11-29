@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { LayoutComponent } from './components/layout/layout.component';
 import { HeaderComponent } from './components/header/header.component';
-import { LeftSideBarComponent } from './components/left-side-bar/left-side-bar.component';
-import { RightSideBarComponent } from './components/right-side-bar/right-side-bar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { CommonModule } from '@angular/common';
@@ -25,6 +23,9 @@ import { MessageCardComponent } from './components/left-side-bar/components/fron
 import { CalendarComponent } from './components/right-side-bar/components/calendar/calendar.component';
 import { EmailsComponent } from './components/right-side-bar/components/emails/emails.component';
 import { MatButtonModule } from '@angular/material/button';
+import { SharedModule } from '@root/shared/shared.module';
+import { RightSideBarComponent } from './components/right-side-bar/components/right-side-bar/right-side-bar.component';
+import { LeftSideBarComponent } from './components/left-side-bar/components/left-side-bar/left-side-bar.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule,
     MatInputModule,
     MatTabsModule,
-    MatButtonModule
+    MatButtonModule,
+    SharedModule
   ],
   providers: [],
 })
